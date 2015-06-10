@@ -221,6 +221,8 @@ public class frminicio extends javax.swing.JFrame {
         muregistrar = new javax.swing.JMenu();
         clientesjMenuItem = new javax.swing.JMenuItem();
         muherramientas = new javax.swing.JMenu();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
         muconfiguraciones = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
@@ -373,7 +375,7 @@ public class frminicio extends javax.swing.JFrame {
 
         jmi_exit.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ESCAPE, 0));
         jmi_exit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/door_in.png"))); // NOI18N
-        jmi_exit.setText("Exit");
+        jmi_exit.setText("Salir de la aplicacion");
         jmi_exit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jmi_exitActionPerformed(evt);
@@ -495,6 +497,20 @@ public class frminicio extends javax.swing.JFrame {
 
         muherramientas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/Herramientas.png"))); // NOI18N
         muherramientas.setText("Herramientas");
+
+        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/database_save.png"))); // NOI18N
+        jMenuItem3.setText("Respaldar BD");
+        muherramientas.add(jMenuItem3);
+
+        jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/database_refresh.png"))); // NOI18N
+        jMenuItem5.setText("Restaurar BD");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
+        muherramientas.add(jMenuItem5);
+
         menuBar.add(muherramientas);
 
         muconfiguraciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/Configuraciones.png"))); // NOI18N
@@ -843,6 +859,10 @@ public class frminicio extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jmreporteActionPerformed
 
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -894,7 +914,9 @@ public class frminicio extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JRadioButton jRadioButton4;
