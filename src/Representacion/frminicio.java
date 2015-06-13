@@ -602,20 +602,6 @@ public class frminicio extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-//    public void CentrarVentanaInterna(JInternalFrame internalFrame ){           //  centra el jinternalframe y la muestra en el jDesktop
-//        int x = (escritorio.getWidth()/2) - internalFrame.getWidth()/2;
-//        int y = (escritorio.getHeight()/2) - internalFrame.getHeight()/2;
-//        if(internalFrame.isShowing()){
-//            internalFrame.setLocation(x,y);
-//        }
-//        else{
-//            escritorio.add(internalFrame);
-//            internalFrame.setLocation(x,y);
-//            internalFrame.show();
-//            internalFrame.toFront();
-//        }
-//    }
-    
     private void cutMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cutMenuItemActionPerformed
         // TODO add your handling code here:
         
@@ -628,9 +614,7 @@ public class frminicio extends javax.swing.JFrame {
         else{
             
             CentrarVentanaInterna.FocusInternalWindow(form1);
-            //form1.toFront();
-            //form1.moveToFront();
-            //form1.requestFocus();
+            
         }
         
     }//GEN-LAST:event_cutMenuItemActionPerformed
@@ -644,7 +628,6 @@ public class frminicio extends javax.swing.JFrame {
             System.exit(0);
         }
         
-        //musalir.requestFocus();
     }//GEN-LAST:event_musalirMouseClicked
 
     private void copyMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_copyMenuItemActionPerformed
@@ -657,10 +640,7 @@ public class frminicio extends javax.swing.JFrame {
         else{
             CentrarVentanaInterna.FocusInternalWindow(form2);
         }
-        //frmproveedor form= new frmproveedor();
-        //escritorio.add(form);
-        //form.toFront();
-        //form.setVisible(true);
+
     }//GEN-LAST:event_copyMenuItemActionPerformed
 
     private void clientesjMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clientesjMenuItemActionPerformed
@@ -673,10 +653,7 @@ public class frminicio extends javax.swing.JFrame {
         else{
             CentrarVentanaInterna.FocusInternalWindow(form3);
         }
-        //frmcliente form=new frmcliente();
-        //escritorio.add(form);
-        //form.toFront();
-        //form.setVisible(true);
+
     }//GEN-LAST:event_clientesjMenuItemActionPerformed
 
     private void operacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_operacionActionPerformed
@@ -692,14 +669,6 @@ public class frminicio extends javax.swing.JFrame {
         }
         frmoperacion.txtusuario.setText(lblnombre.getText()+ " " + lblapellido.getText());
         frmoperacion.idusuario=Integer.parseInt(lblidusuario.getText());
-        
-        
-        //frmoperacion form =new frmoperacion();
-        //escritorio.add(form);
-        //form.toFront();
-        //form.setVisible(true);
-        
-        
         
     }//GEN-LAST:event_operacionActionPerformed
 
@@ -717,13 +686,6 @@ public class frminicio extends javax.swing.JFrame {
         
         frmopventa.txtusuario.setText(lblnombre.getText()+ " " + lblapellido.getText());
         frmopventa.idusuario=Integer.parseInt(lblidusuario.getText());
-        
-        
-        //frmopventa form =new frmopventa();
-        //frminicio.escritorio.add(form);
-        //form.toFront();
-        //form.setVisible(true);
-        
         
     }//GEN-LAST:event_contentMenuItemActionPerformed
 
@@ -753,11 +715,6 @@ public class frminicio extends javax.swing.JFrame {
             CentrarVentanaInterna.FocusInternalWindow(form5);
         }
         
-        
-        //frmusuario form =new frmusuario();
-        //escritorio.add(form);
-        //form.toFront();
-        //form.setVisible(true);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void entradaMenuSelected(javax.swing.event.MenuEvent evt) {//GEN-FIRST:event_entradaMenuSelected

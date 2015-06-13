@@ -612,21 +612,27 @@ public class frmcliente extends javax.swing.JInternalFrame {
    //Botón Eliminar
     private void btneliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btneliminarActionPerformed
         // TODO add your handling code here:
-        if (!txtidcliente.getText().equals("")) {
-            int confirmacion = JOptionPane.showConfirmDialog(rootPane, "¿Estás seguro de Eliminar el Cliente?","Confirmar",2);
+        
+        try{
+            if (!txtidcliente.getText().equals("")) {
+                int confirmacion = JOptionPane.showConfirmDialog(rootPane, "¿Estás seguro de Eliminar el Cliente?","Confirmar",2);
 
-            if (confirmacion==0) {
-                fcliente func = new fcliente();
-                vcliente dts= new vcliente();
+                if (confirmacion==0) {
+                    fcliente func = new fcliente();
+                    vcliente dts= new vcliente();
 
-                dts.setIdCliente(Integer.parseInt(txtidcliente.getText()));
-                func.eliminar(dts);
-                mostrar("");
-                inhabilitar();
+                    dts.setIdCliente(Integer.parseInt(txtidcliente.getText()));
+                    func.eliminar(dts);
+                    mostrar("");
+                    inhabilitar();
 
+                }
             }
-
+        }catch(Exception ex){
+            JOptionPane.showMessageDialog( null, "PARA PODER ELIMINAR UN REGISTRO,\nPRIMERO DEBE SELECCIONAR UNA FILA DE LA TABLA", "VERIFICAR", JOptionPane.WARNING_MESSAGE);
         }
+        
+
     }//GEN-LAST:event_btneliminarActionPerformed
 
     

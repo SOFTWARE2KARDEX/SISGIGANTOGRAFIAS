@@ -404,6 +404,7 @@ public class frmopentrada extends javax.swing.JInternalFrame {
         });
 
         btnbusproveedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/File/provedor1.png"))); // NOI18N
+        btnbusproveedor.setToolTipText("Búsqueda y selección de un Proveedor ");
         btnbusproveedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnbusproveedorActionPerformed(evt);
